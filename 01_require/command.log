@@ -1,0 +1,35 @@
+shimizu@DESKTOP-I3S3CFA:~/shi-tak/ruby_example/01_require$ ruby main.rb 
+start: main.rb
+
+load sub_a.rb by Karnel#require
+execute: sub_a.rb
+
+load sub_b.rb by Karnel#require_relative
+execute: sub_b.rb
+
+load sub_c.rb by Karnel#load
+execute: sub_c.rb
+
+cannot re-load sub_a.rb by Karnel#requre, because it has already been loaded
+
+cannot re-load sub_a.rb by Karnel#requre_relative, because it has already been loaded
+
+can re-load sub_a.rb by Karnel#load
+execute: sub_a.rb
+
+cannot re-load sub_b.rb by Karnel#requre, because it has already been loaded
+
+cannot re-load sub_b.rb by Karnel#requre_relative, because it has already been loaded
+
+can re-load sub_b.rb by Karnel#load
+execute: sub_b.rb
+
+can re-load sub_c.rb by Karnel#requre, because it has not been loaded by Karnel#requre or Karnel#requre_relative
+execute: sub_c.rb
+
+cannot re-load sub_c.rb by Karnel#requre_relative, but cannot execute because it has already been loaded
+
+can re-load sub_c.rb by Karnel#load
+execute: sub_c.rb
+
+finish: main.rb
